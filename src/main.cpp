@@ -29,8 +29,9 @@ class Fish{
         vector<string> spec_type = {"Bass","Blue Gill","Catfish","Carp","Trout","Gyarados"};
         string fish_species;
         double fish_weight;
+        bool seeded;
         Fish(){
-            bool seeded = seed_me();
+            seeded = seed_me();
             fish_species = randomizer(spec_type);
             fish_weight = ((double)rand()) / ((double)RAND_MAX) * 19.9 + 0.1;
     
