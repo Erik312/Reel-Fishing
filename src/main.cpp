@@ -52,13 +52,6 @@ int main(){
     player1.name = temp_name;
     vector<FishingSpot> fish_dest;
     populate_locations(fish_dest);
-
-    //FishingSpot loc1{"Big Bear Lake","Big Bear Lake sits 100 miles northeast of Los Angeles in the San Bernardino National Forest. Altitudes range from 6,750 to 9,000 feet and the valley enjoys 300+ days of sunshine each year. Big Bear Lake is a manmade, fresh-water lake 7 miles long and a 1/2 mile wide. Maximum depth reaches 72 feet.",22};
-    //FishingSpot loc2{"Lake Texoma","Come visit Lake Texoma, a nature filled cakewalk of water playgrounds and tons of activities in the southwest US.It covers 74,686-acres with 550 miles of shoreline.",580};
-    //FishingSpot loc3{"Clear Lake","Clear Lake State Park is on the shores of California’s largest freshwater lake. The area is popular for all kinds of water recreation, including swimming, fishing, boating and water-skiing.Anglers can catch largemouth bass, crappie, bluegill and channel catfish.",100};
-    //fish_dest.push_back(loc1);
-    //fish_dest.push_back(loc2);
-    //fish_dest.push_back(loc3);
     cout << "Select a lake to fish:" << endl;
     cout << "[0] Big Bear Lake" << endl;
     cout << "[1] Lake Texoma" << endl;
