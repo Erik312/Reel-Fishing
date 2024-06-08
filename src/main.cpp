@@ -28,11 +28,15 @@ using std::srand;
 
 void populate_locations(vector<FishingSpot> &v1){
     FishingSpot loc1{"Big Bear Lake","Big Bear Lake sits 100 miles northeast of Los Angeles in the San Bernardino National Forest. Altitudes range from 6,750 to 9,000 feet and the valley enjoys 300+ days of sunshine each year. Big Bear Lake is a manmade, fresh-water lake 7 miles long and a 1/2 mile wide. Maximum depth reaches 72 feet.",22};
-    FishingSpot loc2{"Lake Texoma","Come visit Lake Texoma, a nature filled cakewalk of water playgrounds and tons of activities in the southwest US.It covers 74,686-acres with 550 miles of shoreline.",580};
+    FishingSpot loc2{"Lake Texoma","Come visit Lake Texoma, a nature filled cakewalk of water playgrounds and tons of activities in the southwest US. It covers 74,686-acres with 550 miles of shoreline.",580};
     FishingSpot loc3{"Clear Lake","Clear Lake State Park is on the shores of California’s largest freshwater lake. The area is popular for all kinds of water recreation, including swimming, fishing, boating and water-skiing.Anglers can catch largemouth bass, crappie, bluegill and channel catfish.",100};
+    FishingSpot loc4{"Lake Fork","At 27,264 acres and 315 miles of shoreline, Lake Fork was designed to be a bass fishing lake and currently holds records for Top 50 largemouth bass caught in Texas. It was impounded in 1980, and today has a depth of 70 feet.",315};
+    FishingSpot loc5{"Lake Okeechobee","Lake Okeechobee is Florida's largest lake and the second largest body of fresh water in the contiguous United States. It features 730 square miles, averaging only nine feet deep and an enormous habitat diversity.",135};
     v1.push_back(loc1);
     v1.push_back(loc2);
     v1.push_back(loc3);
+    v1.push_back(loc4);
+    v1.push_back(loc5);
     return;
 
 };
@@ -56,6 +60,8 @@ int main(){
     cout << "[0] Big Bear Lake" << endl;
     cout << "[1] Lake Texoma" << endl;
     cout << "[2] Clear Lake" << endl;
+    cout << "[3] Lake Fork" << endl;
+    cout << "[4] Lake Okeechobee" << endl;
     cout << endl;
     cout << "Selected: ";
     int selected_location_id;
@@ -71,6 +77,8 @@ int main(){
         cout << "[0] Big Bear Lake" << endl;
         cout << "[1] Lake Texoma" << endl;
         cout << "[2] Clear lake" << endl;
+        cout << "[3] Lake Fork" << endl;
+        cout << "[4] Lake Okeechobee" << endl;
         cout << endl;
         cout << "Selected: ";
         cin >> selected_location_id;
@@ -82,6 +90,8 @@ int main(){
         cout << "[0] Big Bear Lake" << endl;
         cout << "[1] Lake Texoma" << endl;
         cout << "[2] Clear Lake" << endl;
+        cout << "[3] Lake Fork" << endl;
+        cout << "[4] Lake Okeechobee" << endl;
         cout << endl;
         cout << "Selected: ";
         cin >> selected_location_id;
