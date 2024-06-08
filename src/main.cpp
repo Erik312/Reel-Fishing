@@ -41,6 +41,15 @@ void populate_locations(vector<FishingSpot> &v1){
 
 };
 
+void show_fishingspots_menu(vector<FishingSpot> &v1){
+    cout << "Select a lake to fish:" << endl;
+    for(int i=0; i < v1.size(); i++){
+        cout << '[' << i << ']' << v1[i].location_name << endl;
+    }
+    cout << endl;
+    return;
+};
+
 int main(){
     cout << endl;
     cout << "R E E L __________ F I S H I N G" << endl;
@@ -56,13 +65,7 @@ int main(){
     player1.name = temp_name;
     vector<FishingSpot> fish_dest;
     populate_locations(fish_dest);
-    cout << "Select a lake to fish:" << endl;
-    cout << "[0] Big Bear Lake" << endl;
-    cout << "[1] Lake Texoma" << endl;
-    cout << "[2] Clear Lake" << endl;
-    cout << "[3] Lake Fork" << endl;
-    cout << "[4] Lake Okeechobee" << endl;
-    cout << endl;
+    show_fishingspots_menu(fish_dest);
     cout << "Selected: ";
     int selected_location_id;
     cin >> selected_location_id;
@@ -73,26 +76,14 @@ int main(){
         cin.clear();
         cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         cout << endl;
-        cout << "Select a lake to fish:" << endl;
-        cout << "[0] Big Bear Lake" << endl;
-        cout << "[1] Lake Texoma" << endl;
-        cout << "[2] Clear lake" << endl;
-        cout << "[3] Lake Fork" << endl;
-        cout << "[4] Lake Okeechobee" << endl;
-        cout << endl;
+        show_fishingspots_menu(fish_dest);
         cout << "Selected: ";
         cin >> selected_location_id;
         };
     while(selected_location_id > fish_dest.size() - 1){
         cout << "***Invalid number selected***" << endl;
         cout << endl;
-        cout << "Select a fishing lake:" << endl;
-        cout << "[0] Big Bear Lake" << endl;
-        cout << "[1] Lake Texoma" << endl;
-        cout << "[2] Clear Lake" << endl;
-        cout << "[3] Lake Fork" << endl;
-        cout << "[4] Lake Okeechobee" << endl;
-        cout << endl;
+        show_fishingspots_menu(fish_dest);
         cout << "Selected: ";
         cin >> selected_location_id;
         cout << endl;
