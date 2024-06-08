@@ -14,6 +14,10 @@
 #include <chrono>
 #include <thread>
 
+#include "base_models/fisherman.hpp"
+#include "base_models/fish.hpp"
+#include "./base_models/fishing_spot.hpp"
+
 using std::cout;
 using std::cin;
 using std::endl;
@@ -23,7 +27,7 @@ using std::rand;
 using std::srand;
 
 
-
+/*
 class Fish{
     public:
         vector<string> spec_type = {"Bass","Blue Gill","Catfish","Carp","Trout","Gyarados"};
@@ -54,6 +58,10 @@ class Fish{
 
 };
 
+
+*/
+
+/*
 class Fisherman{
     public:
         string name;
@@ -61,6 +69,12 @@ class Fisherman{
 
 
 };
+
+*/
+
+
+
+/*
 
 class Fishing_Spot{
     public:
@@ -90,7 +104,7 @@ class Fishing_Spot{
         };
 };
 
-
+*/
 
 int main(){
     cout << endl;
@@ -105,10 +119,10 @@ int main(){
     
     Fisherman player1;
     player1.name = temp_name;
-    vector<Fishing_Spot> fish_dest;
-    Fishing_Spot loc1{"Big Bear Lake","Big Bear Lake sits 100 miles northeast of Los Angeles in the San Bernardino National Forest. Altitudes range from 6,750 to 9,000 feet and the valley enjoys 300+ days of sunshine each year. Big Bear Lake is a manmade, fresh-water lake 7 miles long and a 1/2 mile wide. Maximum depth reaches 72 feet.",22};
-    Fishing_Spot loc2{"Lake Texoma","Come visit Lake Texoma, a nature filled cakewalk of water playgrounds and tons of activities in the southwest US.It covers 74,686-acres with 550 miles of shoreline.",580};
-    Fishing_Spot loc3{"Clear Lake","Clear Lake State Park is on the shores of California’s largest freshwater lake. The area is popular for all kinds of water recreation, including swimming, fishing, boating and water-skiing.Anglers can catch largemouth bass, crappie, bluegill and channel catfish.",100};
+    vector<FishingSpot> fish_dest;
+    FishingSpot loc1{"Big Bear Lake","Big Bear Lake sits 100 miles northeast of Los Angeles in the San Bernardino National Forest. Altitudes range from 6,750 to 9,000 feet and the valley enjoys 300+ days of sunshine each year. Big Bear Lake is a manmade, fresh-water lake 7 miles long and a 1/2 mile wide. Maximum depth reaches 72 feet.",22};
+    FishingSpot loc2{"Lake Texoma","Come visit Lake Texoma, a nature filled cakewalk of water playgrounds and tons of activities in the southwest US.It covers 74,686-acres with 550 miles of shoreline.",580};
+    FishingSpot loc3{"Clear Lake","Clear Lake State Park is on the shores of California’s largest freshwater lake. The area is popular for all kinds of water recreation, including swimming, fishing, boating and water-skiing.Anglers can catch largemouth bass, crappie, bluegill and channel catfish.",100};
     fish_dest.push_back(loc1);
     fish_dest.push_back(loc2);
     fish_dest.push_back(loc3);
