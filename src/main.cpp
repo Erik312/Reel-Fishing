@@ -50,6 +50,18 @@ void show_fishingspots_menu(vector<FishingSpot> &v1){
     return;
 };
 
+void show_player_menu(){
+    cout << endl;
+    cout << "M E N U" << endl;
+    cout << "[1] Cast" << endl;
+    cout << "[2] Total" << endl;
+    cout << "[3] Quit fishing" << endl;
+    cout << endl;
+    cout << "Select an action: ";
+    cout << endl;
+    return;
+};
+
 int main(){
     cout << endl;
     cout << "R E E L __________ F I S H I N G" << endl;
@@ -107,27 +119,14 @@ int main(){
     while(!game_over){
         int player_option=0;
         int fish_rng = 0;
-        cout << endl;
-        cout << "M E N U" << endl;
-        cout << "[1] Cast" << endl;
-        cout << "[2] Total" << endl;
-        cout << "[3] Quit fishing" << endl;
-        cout << endl;
-        cout << "Select an action: ";
-        cout << endl;
+        show_player_menu();
         cin >> player_option;
         while(cin.fail()){
             cout << endl;
             cout << "* Bad Entry. Select a valid option. *" << endl;
             cin.clear();
             cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-            cout << endl;
-            cout << "M E N U" << endl;
-            cout << "[1] Cast" << endl;
-            cout << "[2] Total" << endl;
-            cout << "[3] Quit fishing" << endl;
-            cout << endl;
-            cout << "Select an action: ";
+            show_player_menu();
             cin >> player_option;
             }
         cout << "************************************" << endl; 
