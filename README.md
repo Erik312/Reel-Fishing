@@ -3,14 +3,10 @@ A text Based Fishing Game written in C++. Fish different lakes and catch a varie
 
 ## Running the game
 - Download src files
-- Compile and Run main.cpp file
-- or use makefile
+- Compile and Link files
+- Run ./main
+- or use makefile and Run ./main
 ```
-g++ -std=c++17 main.cpp -o main
-
-./main
-
-or
 
 make
 
