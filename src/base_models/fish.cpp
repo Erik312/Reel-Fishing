@@ -18,7 +18,7 @@ using std::srand;
 
 
 Fish::Fish(){
-	spec_type = {"Bass","Blue Gill","Catfish","Carp","Trout","Gyarados","Sunfish","Crappie","Bowfin"};
+	spec_type = {"Bass","Blue Gill","Catfish","Carp","Trout","Gyarados","Sunfish","Crappie","Bowfin","Yellow Perch"};
 	seeded = seed_me();
     fish_species = randomizer(spec_type);
     fish_weight = ((double)rand()) / ((double)RAND_MAX) * 19.9 + 0.1;
