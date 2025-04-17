@@ -43,7 +43,7 @@ void populate_locations(vector<FishingSpot> &v1){
 
 void show_fishingspots_menu(vector<FishingSpot> &v1){
     cout << "Select a lake to fish:" << endl;
-    for(int i=0; i < v1.size(); i++){
+    for(unsigned int i=0; i < v1.size(); i++){
         cout << '[' << i << ']' << v1[i].location_name << endl;
     }
     cout << endl;
@@ -79,7 +79,7 @@ int main(){
     populate_locations(fish_dest);
     show_fishingspots_menu(fish_dest);
     cout << "Selected: ";
-    int selected_location_id;
+    unsigned int selected_location_id;
     cin >> selected_location_id;
     cout << endl;
     while(cin.fail()){
@@ -155,16 +155,9 @@ int main(){
 
             };
         }else if(player_option == 2){
-            int count = 1;
             cout << "Total Catch for the day: " << endl;
             cout << endl;
-            for(auto item : player1.catch_bag){
-
-                cout << count << "." << " "<< "{ Type:" <<item.fish_species << ", Weight:" << item.fish_weight << " lbs}" << endl;
-                
-                count++;
-                
-            }
+            player1.totalCatch();
             cout << endl;
             cout << "*************************************************" << endl;
 

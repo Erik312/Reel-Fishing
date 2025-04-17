@@ -13,6 +13,7 @@ class Fisherman{
 
         Fisherman();
         ~Fisherman();
+        void totalCatch();
 
 
 };
