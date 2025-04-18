@@ -16,7 +16,7 @@
 
 #include "base_models/fisherman.hpp"
 #include "base_models/fish.hpp"
-#include "./base_models/fishing_spot.hpp"
+#include "base_models/fishing_spot.hpp"
 
 using std::cout;
 using std::cin;
