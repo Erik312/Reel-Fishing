@@ -22,6 +22,7 @@ using std::srand;
 
 class Game{
     public:
+        bool _gameOver;
         Game();
         ~Game();
         void populateLocations(vector<FishingSpot> &v1);
