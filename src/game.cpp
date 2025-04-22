@@ -22,7 +22,9 @@ using std::srand;
 
 
 
-Game::Game(){};
+Game::Game(){
+    _gameOver=false;
+};
 
 Game::~Game(){};
 
@@ -65,7 +67,6 @@ void Game::run(){
     cout << endl;
     cout << "R E E L __________ F I S H I N G" << endl;
     cout << "________________________________" << endl;
-    bool game_over=false;
     string temp_name;
     cout << endl;
     cout << "Enter Fisherman Name: ";
@@ -115,7 +116,7 @@ void Game::run(){
     cout << "Shoreline: " << fish_dest[selected_location_id].shoreline <<" miles"<< endl;
     cout << endl;
     cout << fish_dest[selected_location_id].description << endl;
-    while(!game_over){
+    while(!_gameOver){
         int player_option=0;
         int fish_rng = 0;
         showMenu();
@@ -164,7 +165,7 @@ void Game::run(){
             cout << endl;
             cout << "Exiting game..." << endl;
             cout << endl;
-            game_over = true;
+            _gameOver = true;
             return;
 
         }else{
