@@ -73,8 +73,7 @@ void Game::run(){
     cin >> temp_name;
     cout << endl;
     
-    Fisherman player1;
-    player1.name = temp_name;
+    _player.name = temp_name;
     vector<FishingSpot> fish_dest;
     populateLocations(fish_dest);
     showFishingSpotsMenu(fish_dest);
@@ -101,7 +100,7 @@ void Game::run(){
         cout << endl;
     };
 
-    cout << "Great! We are all set up and ready to fish " << player1.name << "!" << endl;
+    cout << "Great! We are all set up and ready to fish " << _player.name << "!" << endl;
     cout << endl;
     std::this_thread::sleep_for(std::chrono::milliseconds(500));
     cout << "loading map....." << endl;
@@ -145,7 +144,7 @@ void Game::run(){
                 cout << "***********************************" << endl;
             }else{
                 Fish fresh_fish;
-                player1.catch_bag.push_back(fresh_fish);
+                _player.catch_bag.push_back(fresh_fish);
                 cout << endl;
                 cout << "Fish on! You caught one!!!" << endl;
                 cout << "Catch Summary: " << endl;
@@ -157,7 +156,7 @@ void Game::run(){
         }else if(player_option == 2){
             cout << "Total Catch for the day: " << endl;
             cout << endl;
-            player1.totalCatch();
+            _player.totalCatch();
             cout << endl;
             cout << "*************************************************" << endl;
 
