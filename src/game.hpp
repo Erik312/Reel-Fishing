@@ -24,6 +24,7 @@ class Game{
     public:
         bool _gameOver;
         Fisherman _player;
+	vector<FishingSpot> _fishingDestination;
         Game();
         ~Game();
         void populateLocations(vector<FishingSpot> &v1);

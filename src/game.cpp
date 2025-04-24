@@ -75,7 +75,7 @@ void Game::run(){
     
     _player.name = temp_name;
     vector<FishingSpot> fish_dest;
-    populateLocations(fish_dest);
+    populateLocations(_fishingDestination);
     showFishingSpotsMenu(fish_dest);
     cout << "Selected: ";
     unsigned int selected_location_id;
@@ -87,14 +87,14 @@ void Game::run(){
         cin.clear();
         cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         cout << endl;
-        showFishingSpotsMenu(fish_dest);
+        showFishingSpotsMenu(_fishingDestination);
         cout << "Selected: ";
         cin >> selected_location_id;
         };
-    while(selected_location_id > fish_dest.size() - 1){
+    while(selected_location_id > _fishingDestination.size() - 1){
         cout << "***Invalid number selected***" << endl;
         cout << endl;
-        showFishingSpotsMenu(fish_dest);
+        showFishingSpotsMenu(_fishingDestination);
         cout << "Selected: ";
         cin >> selected_location_id;
         cout << endl;
@@ -110,11 +110,11 @@ void Game::run(){
     cout << "------------ Lets Go Fishing ----------------" << endl;
     cout << endl;
 
-    cout << "Location: " << fish_dest[selected_location_id].location_name << endl;
-    cout << "Weather Conditions: " << fish_dest[selected_location_id].current_forecast << endl;
-    cout << "Shoreline: " << fish_dest[selected_location_id].shoreline <<" miles"<< endl;
+    cout << "Location: " << _fishingDestination[selected_location_id].location_name << endl;
+    cout << "Weather Conditions: " << _fishingDestination[selected_location_id].current_forecast << endl;
+    cout << "Shoreline: " << _fishingDestination[selected_location_id].shoreline <<" miles"<< endl;
     cout << endl;
-    cout << fish_dest[selected_location_id].description << endl;
+    cout << _fishingDestination[selected_location_id].description << endl;
     while(!_gameOver){
         int player_option=0;
         int fish_rng = 0;
