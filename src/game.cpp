@@ -74,9 +74,8 @@ void Game::run(){
     cout << endl;
     
     _player.name = temp_name;
-    vector<FishingSpot> fish_dest;
     populateLocations(_fishingDestination);
-    showFishingSpotsMenu(fish_dest);
+    showFishingSpotsMenu(_fishingDestination);
     cout << "Selected: ";
     unsigned int selected_location_id;
     cin >> selected_location_id;
