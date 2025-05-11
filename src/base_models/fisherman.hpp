@@ -1,10 +1,12 @@
 #pragma once
 
+#include "fish.hpp"
+
 #include <string>
 #include <vector>
 
 
-#include "fish.hpp"
+
 
 class Fisherman{
     public:

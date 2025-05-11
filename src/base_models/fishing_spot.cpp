@@ -1,3 +1,5 @@
+#include "fishing_spot.hpp"
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -5,7 +7,7 @@
 #include <chrono>
 #include <thread>
 
-#include "fishing_spot.hpp"
+
 
 using std::cout;
 using std::cin;

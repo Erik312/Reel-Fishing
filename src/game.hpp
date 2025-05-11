@@ -1,4 +1,7 @@
 #pragma once
+#include "base_models/fisherman.hpp"
+#include "base_models/fish.hpp"
+#include "base_models/fishing_spot.hpp"
 
 #include <iostream>
 #include <string>
@@ -7,9 +10,7 @@
 #include <chrono>
 #include <thread>
 
-#include "base_models/fisherman.hpp"
-#include "base_models/fish.hpp"
-#include "base_models/fishing_spot.hpp"
+
 
 using std::cout;
 using std::cin;
