@@ -1,4 +1,6 @@
 
+#include "fish.hpp"
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -6,7 +8,7 @@
 #include <chrono>
 #include <thread>
 
-#include "fish.hpp"
+
 
 using std::cout;
 using std::cin;
