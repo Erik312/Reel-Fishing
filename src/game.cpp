@@ -63,7 +63,7 @@ void Game::showMenu(){
     return;
 };
 
-void Game::run(){
+int Game::run(){
     cout << endl;
     cout << "R E E L __________ F I S H I N G" << endl;
     cout << "________________________________" << endl;
@@ -164,7 +164,7 @@ void Game::run(){
             cout << "Exiting game..." << endl;
             cout << endl;
             _gameOver = true;
-            return;
+            return 1;
 
         }else{
             cout << "Invalid option selected" << endl;
@@ -174,6 +174,6 @@ void Game::run(){
     };
     
 
-    return;
+   return 1;
 
 };
