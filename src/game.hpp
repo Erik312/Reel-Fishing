@@ -31,6 +31,6 @@ class Game{
         void populateLocations(vector<FishingSpot> &v1);
         void showMenu();
         void showFishingSpotsMenu(vector<FishingSpot> &v1);
-        void run();
+        int run();
 
 };
