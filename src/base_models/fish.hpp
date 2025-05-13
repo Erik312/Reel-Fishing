@@ -25,6 +25,7 @@ class Fish{
         vector<string> spec_type;
         string fish_species;
         double fish_weight;
+        double fish_length;
         bool seeded;
         Fish();
         ~Fish();
