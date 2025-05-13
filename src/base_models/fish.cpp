@@ -24,6 +24,7 @@ Fish::Fish(){
 	seeded = seed_me();
     fish_species = randomizer(spec_type);
     fish_weight = ((double)rand()) / ((double)RAND_MAX) * 19.9 + 0.1;
+    fish_length=((double)rand()) / ((double)RAND_MAX) * 14.9 + 0.1;
 
 };
 

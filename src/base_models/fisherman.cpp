@@ -8,7 +8,7 @@ Fisherman::~Fisherman(){};
 void Fisherman::totalCatch(){
     int count=1;
     for(auto item : catch_bag){
-        cout << count << "." << " "<< "{ Type:" <<item.fish_species << ", Weight:" << item.fish_weight << " lbs}" << endl;
+        cout << count << "." << " "<< "{ Type:" <<item.fish_species << ", Weight:" << item.fish_weight << "lbs" << ", length:" << item.fish_length << "in }" << endl;
                 
         count++;
     }

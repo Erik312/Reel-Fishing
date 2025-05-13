@@ -149,6 +149,7 @@ int Game::run(){
                 cout << "Catch Summary: " << endl;
                 cout << "Type: " << fresh_fish.fish_species << endl;
                 cout << "Weight: " << fresh_fish.fish_weight << " lbs" << endl;
+                cout << "Length: " << fresh_fish.fish_length << " in" << endl;
                 cout << "*************************************************" << endl;
 
             };
