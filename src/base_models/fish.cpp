@@ -20,11 +20,11 @@ using std::srand;
 
 
 Fish::Fish(){
-	spec_type = {"Bass","Blue Gill","Catfish","Carp","Trout","Gyarados","Sunfish","Crappie","Bowfin","Yellow Perch"};
-	seeded = seed_me();
-    fish_species = randomizer(spec_type);
-    fish_weight = ((double)rand()) / ((double)RAND_MAX) * 19.9 + 0.1;
-    fish_length=((double)rand()) / ((double)RAND_MAX) * 14.9 + 0.1;
+	specType={"Bass","Blue Gill","Catfish","Carp","Trout","Gyarados","Sunfish","Crappie","Bowfin","Yellow Perch"};
+	seeded=seed_me();
+    _fishSpecies=randomizer(specType);
+    _fishWeight=((double)rand()) / ((double)RAND_MAX) * 19.9 + 0.1;
+    _fishLength=((double)rand()) / ((double)RAND_MAX) * 14.9 + 0.1;
 
 };
 
@@ -44,7 +44,7 @@ bool Fish::seed_me(){
 string Fish::randomizer(vector<string> v1){
 	int v_size=v1.size();
     srand(time(NULL));
-    int random_rng =rand()%v_size;
+    int random_rng=rand()%v_size;
     return v1[random_rng];
 
 };
