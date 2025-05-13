@@ -22,10 +22,10 @@ using std::srand;
 
 class Fish{
     public:
-        vector<string> spec_type;
-        string fish_species;
-        double fish_weight;
-        double fish_length;
+        vector<string> specType;
+        string _fishSpecies;
+        double _fishWeight;
+        double _fishLength;
         bool seeded;
         Fish();
         ~Fish();
