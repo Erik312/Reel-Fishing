@@ -19,11 +19,11 @@ using std::srand;
 
 
 FishingSpot::FishingSpot(string l_name,string l_description,double l_shoreline){
-	forecast_options = {"Sunny","Cloudy","Raining"};
-	location_name = l_name;
-    current_forecast = randomizer(forecast_options);
-    description = l_description;
-    shoreline = l_shoreline;
+	_forecastOptions = {"Sunny","Cloudy","Raining"};
+	_locationName = l_name;
+    _currentForecast = randomizer(_forecastOptions);
+    _description = l_description;
+    _shoreline = l_shoreline;
 
 };
 

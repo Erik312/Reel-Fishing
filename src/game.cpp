@@ -45,7 +45,7 @@ void Game::populateLocations(vector<FishingSpot> &v1){
 void Game::showFishingSpotsMenu(vector<FishingSpot> &v1){
     cout << "Select a lake to fish:" << endl;
     for(unsigned int i=0; i < v1.size(); i++){
-        cout << '[' << i << ']' << v1[i].location_name << endl;
+        cout << '[' << i << ']' << v1[i]._locationName << endl;
     }
     cout << endl;
     return;
@@ -109,11 +109,11 @@ int Game::run(){
     cout << "------------ Lets Go Fishing ----------------" << endl;
     cout << endl;
 
-    cout << "Location: " << _fishingDestination[selected_location_id].location_name << endl;
-    cout << "Weather Conditions: " << _fishingDestination[selected_location_id].current_forecast << endl;
-    cout << "Shoreline: " << _fishingDestination[selected_location_id].shoreline <<" miles"<< endl;
+    cout << "Location: " << _fishingDestination[selected_location_id]._locationName << endl;
+    cout << "Weather Conditions: " << _fishingDestination[selected_location_id]._currentForecast << endl;
+    cout << "Shoreline: " << _fishingDestination[selected_location_id]._shoreline <<" miles"<< endl;
     cout << endl;
-    cout << _fishingDestination[selected_location_id].description << endl;
+    cout << _fishingDestination[selected_location_id]._description << endl;
     while(!_gameOver){
         int player_option=0;
         int fish_rng = 0;
