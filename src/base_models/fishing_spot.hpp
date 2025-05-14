@@ -19,11 +19,11 @@ using std::srand;
 
 class FishingSpot{
     public:
-        string location_name;
-        vector<string> forecast_options;
-        string current_forecast;
-        string description;
-        double shoreline;
+        string _locationName;
+        vector<string> _forecastOptions;
+        string _currentForecast;
+        string _description;
+        double _shoreline;
 
         FishingSpot(string l_name,string l_description,double l_shoreline);
         ~FishingSpot();
