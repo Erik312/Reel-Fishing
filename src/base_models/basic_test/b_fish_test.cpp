@@ -9,13 +9,13 @@ int main(int argc, char *argv[]){
 	std::cout << "Tester running.....\n";
 	Fish test_fish;
 	assert(typeid(test_fish)==typeid(Fish));
-	assert(test_fish.fish_species != " ");
-	assert(test_fish.fish_weight != '\0');
-    assert(test_fish.fish_weight != 0);
-    assert(test_fish.fish_weight != 0.0);
-    assert(test_fish.fish_weight != 0.00);
+	assert(test_fish._fishSpecies != " ");
+	assert(test_fish._fishWeight != '\0');
+    assert(test_fish._fishWeight != 0);
+    assert(test_fish._fishWeight != 0.0);
+    assert(test_fish._fishWeight != 0.00);
     std::cout << "\n";
-    std::cout << test_fish.fish_species << ':' << test_fish.fish_weight << "\n";
+    std::cout << test_fish._fishSpecies << ':' << test_fish._fishWeight << "\n";
     std::cout << "\n";
 	std::cout << "End test [PASS]\n";
 
