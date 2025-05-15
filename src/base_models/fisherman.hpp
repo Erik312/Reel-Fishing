@@ -10,8 +10,8 @@
 
 class Fisherman{
     public:
-        string name;
-        vector<Fish> catch_bag;
+        string _name;
+        vector<Fish> _catchBag;
 
         Fisherman();
         ~Fisherman();
