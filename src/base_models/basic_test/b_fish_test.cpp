@@ -14,8 +14,12 @@ int main(int argc, char *argv[]){
     assert(test_fish._fishWeight != 0);
     assert(test_fish._fishWeight != 0.0);
     assert(test_fish._fishWeight != 0.00);
+    assert(test_fish._fishLength != '\0');
+    assert(test_fish._fishLength != 0);
+    assert(test_fish._fishLength != 0.0);
+    assert(test_fish._fishLength != 0.00);
     std::cout << "\n";
-    std::cout << test_fish._fishSpecies << ':' << test_fish._fishWeight << "\n";
+    std::cout << test_fish._fishSpecies << ':' << test_fish._fishWeight << ':' << test_fish._fishLength << "\n";
     std::cout << "\n";
 	std::cout << "End test [PASS]\n";
 
